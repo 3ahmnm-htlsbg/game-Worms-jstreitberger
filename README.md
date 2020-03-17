@@ -1,28 +1,31 @@
-# Unity2019114f1-2D-Template
+# game-Worms-jstreitberger
 
 ### Project description: 
-Introduction/Project summary 
+2D-Game similar like the game worms, where you have shoot each other 
 
 ### Development platform: 
-(OS, Unity Version, Visual Studio Version, used SDKs)
++ Windows 10
++ Unity 2019.1.14f1
 
-### Target platform: 
-WebGL, Mobile, VR Device incl. reference resolution 
+### Target platform:
+WebGL 
+
+### Necessary setup/execution steps:
+WebGL has to be installed
 
 ### Visuals: 
-Screenshots (concept and experience), Video
-
-### Necessary setup/execution steps: 
-Installation process, e.g. step by step instructions that I can run the project after cloning it
+None
 
 ### Third party material: 
-(if used Fonts, Sounds, Music, Graphics, Materials, Code etc.)
+Original Readme: https://github.com/3ahmnm-htlsbg/home-WebGl-cs-smeerws/blob/master/README.md
 
 ### Project state: 
-incl. progress in percent
 
 ### Limitations: 
 
 ### Lessons Learned: 
++ Revision of Github and creating a repository
++ Revision of building scenes
++ Github Pages
 
 Copyright by jana streitberger
