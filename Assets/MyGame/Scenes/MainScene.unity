@@ -501,8 +501,8 @@ MonoBehaviour:
   jumpKey: 119
   forwardKey: 100
   backwardKey: 97
-  v: {x: -150, y: 0, z: -150}
-  y: {x: 150, y: 0, z: 150}
+  v: {x: -150, y: 0, z: 0}
+  y: {x: 150, y: 0, z: 0}
   z: {fileID: 576052250}
   x: {x: 0, y: 150, z: 0}
   f: 0
@@ -939,26 +939,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &1127770505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1127770501}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46d2af0930fc40144be649998a850b2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpKey: 0
-  forwardKey: 0
-  backwardKey: 0
-  v: {x: 0, y: 0, z: 0}
-  y: {x: 0, y: 0, z: 0}
-  z: {fileID: 1127770503}
-  x: {x: 0, y: 500, z: 0}
-  f: 0
 --- !u!1001 &1219147253
 PrefabInstance:
   m_ObjectHideFlags: 0
