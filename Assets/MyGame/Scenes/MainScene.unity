@@ -498,14 +498,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46d2af0930fc40144be649998a850b2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpKey: 119
+  jumpKey: 101
+  downKey: 0
   forwardKey: 100
   backwardKey: 97
-  v: {x: -150, y: 0, z: 0}
-  y: {x: 150, y: 0, z: 0}
+  shootKey: 119
   z: {fileID: 576052250}
+  position: {x: 0, y: 0, z: 0}
+  y: {x: 150, y: 0, z: 0}
   x: {x: 0, y: 150, z: 0}
   f: 0
+  projectile: {fileID: -927199367670048503, guid: 640b76303d93f0e468c595f086cf6e1f,
+    type: 3}
+  pos: {fileID: 0}
+  quat: {x: 0, y: 0, z: 0, w: 0}
 --- !u!54 &576052250
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -522,6 +528,43 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!23 &576052251
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576052248}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1001 &630526109
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -916,13 +959,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpKey: 105
+  downKey: 0
   forwardKey: 106
   backwardKey: 108
-  v: {x: 150, y: 0, z: 0}
-  y: {x: -150, y: 0, z: 0}
+  shootKey: 117
   z: {fileID: 1127770503}
+  position: {x: 0, y: 0, z: 0}
+  y: {x: -150, y: 0, z: 0}
   x: {x: 0, y: 150, z: 0}
   f: 0
+  projectile: {fileID: -927199367670048503, guid: 640b76303d93f0e468c595f086cf6e1f,
+    type: 3}
+  pos: {fileID: 0}
+  quat: {x: 0, y: 0, z: 0, w: 0}
 --- !u!54 &1127770503
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -939,6 +988,43 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!23 &1127770504
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127770501}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1001 &1219147253
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1455,13 +1541,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpKey: 0
+  downKey: 0
   forwardKey: 0
   backwardKey: 0
-  v: {x: 0, y: 0, z: 0}
-  y: {x: 0, y: 0, z: 0}
+  shootKey: 0
   z: {fileID: 0}
+  position: {x: 0, y: 0, z: 0}
+  y: {x: 0, y: 0, z: 0}
   x: {x: 0, y: 0, z: 0}
   f: 0
+  projectile: {fileID: 0}
+  pos: {fileID: 0}
+  quat: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1001 &1627498433
 PrefabInstance:
   m_ObjectHideFlags: 0

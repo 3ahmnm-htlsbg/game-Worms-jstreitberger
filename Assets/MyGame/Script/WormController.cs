@@ -7,19 +7,29 @@ public class WormController : MonoBehaviour
 
     public KeyCode jumpKey;
 
+    public KeyCode downKey;
+
     public KeyCode forwardKey;
 
     public KeyCode backwardKey;
 
-    public Vector3 v;
-
-    public Vector3 y;
+    public KeyCode shootKey;
 
     public Rigidbody z;
+
+    public Vector3 position;
+
+    public Vector3 y;
 
     public Vector3 x;
 
     public ForceMode f;
+
+    public GameObject projectile;
+
+    public Transform pos;
+
+    public Quaternion quat;
 
 
 
@@ -39,7 +49,7 @@ public class WormController : MonoBehaviour
 
         if (Input.GetKeyDown(forwardKey))
         {
-            Debug.Log("die ForwardTaste wird gedrückt.");
+            Debug.Log("Character bewegt sich vorwärts.");
             z.AddForce(y, f);
 
        
@@ -47,11 +57,31 @@ public class WormController : MonoBehaviour
 
         if (Input.GetKeyDown(backwardKey))
         {
-            Debug.Log("die ForwardTaste wird gedrückt.");
-            z.AddForce(v, f);
+            Debug.Log("Characktar bewegt sich zurück");
+            z.AddForce(-y);
+            
+        }
+
+
+        if (Input.GetKeyDown(downKey))
+        {
+            Debug.Log("Character bewegt sich nach unten.");
+            z.AddForce(-x);
 
 
         }
+
+
+
+        if (Input.GetKeyDown(shootKey))
+        {
+            Debug.Log("Character schießt.");
+            Instantiate(projectile, position, quat);
+
+
+        }
+
+
 
     }
 }
