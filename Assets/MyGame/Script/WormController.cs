@@ -4,84 +4,51 @@ using UnityEngine;
 
 public class WormController : MonoBehaviour
 {
-
-    public KeyCode jumpKey;
-
-    public KeyCode downKey;
-
-    public KeyCode forwardKey;
-
-    public KeyCode backwardKey;
-
-    public KeyCode shootKey;
-
-    public Rigidbody z;
-
-    public Vector3 position;
-
-    public Vector3 y;
-
+    
+    public Rigidbody rb;
     public Vector3 x;
-
+    public Vector3 y;
+    public KeyCode jumpKey;
+    public KeyCode downKey;
+    public KeyCode forwardKey;
+    public KeyCode backwardKey;
+    public KeyCode shootKey;
     public ForceMode f;
-
     public GameObject projectile;
-
-    public Transform pos;
-
-    public Quaternion quat;
+    public Vector3 position;
+   
 
 
 
- 
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(jumpKey))
         {
-            //dieser Code wird ausgeführt, sobald die in der Variable jumpkey definierte Taste gedrückt wird
-            Debug.Log("die JumpTaste wird gedrückt.");
-            z.AddForce(x, f);
+            Debug.Log("Sprungtaste wird gedrückt.");
+            rb.AddForce(x, f);
         }
-
-      
 
         if (Input.GetKeyDown(forwardKey))
         {
-            Debug.Log("Character bewegt sich vorwärts.");
-            z.AddForce(y, f);
-
-       
+            Debug.Log("Charakter moves right.");
+            rb.AddForce(y, f);
         }
 
         if (Input.GetKeyDown(backwardKey))
         {
-            Debug.Log("Characktar bewegt sich zurück");
-            z.AddForce(-y);
-            
+            Debug.Log("Charakter moves left.");
+            rb.AddForce(-y);
         }
-
 
         if (Input.GetKeyDown(downKey))
         {
-            Debug.Log("Character bewegt sich nach unten.");
-            z.AddForce(-x);
-
-
+            Debug.Log("Charakter moves down.");
+            rb.AddForce(-x);
         }
 
-
-
-        if (Input.GetKeyDown(shootKey))
-        {
-            Debug.Log("Character schießt.");
-            Instantiate(projectile, position, quat);
-
-
-        }
-
-
-
+     
+      
     }
 }
